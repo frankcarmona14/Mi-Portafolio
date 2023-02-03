@@ -24,10 +24,10 @@
               <a href="#about">Sobre Mí</a>
             </li>
             <li class="navbar__list-item">
-              <a href="#">Portafolio</a>
+              <a href="#portfolio">Portafolio</a>
             </li>
             <li class="navbar__list-item">
-              <a href="#">Contacto</a>
+              <a href="#contact">Contacto</a>
             </li>
           </ul>
         </div>
@@ -58,10 +58,10 @@
     <main>
       <section id="about" class="section__about" data-aos="fade-up">
         <div class="section__about-photo">
-          <img src="assets/img/hexagono.png" alt="hexagono" />
+          <!-- <img src="assets/img/hexagono.png" alt="hexagono" /> -->
         </div>
         <div class="section__about-desc">
-          <h1 class="section__about-title">¿Quien soy?</h1>
+          <h2 class="section__about-title">¿Quien soy?</h2>
           <p class="section__about-paragraph">
             Colombiano, actualmente viviendo en España. Fui estudiante del Grado
             Superior DAW en el IES Vista Alegre de Madrid, apasionado por el
@@ -85,14 +85,110 @@
           <div class="skills-img"></div>
         </div>
       </section>
-      <section class="section__portfolio">
-
+      <section id="portfolio" class="section__portfolio" data-aos="fade-up">
+        <h2 class="section__about-title">Portafolio</h2>
+        <div class="section__portfolio-cards">
+          <div class="card">
+            <div class="card__content">
+              <h2>Hotel Santorini Resort</h2>
+              <a
+                href="https://frankcarmona.000webhostapp.com/app/hotelGrecia/Inicio.php"
+                class="section__about-btn"
+                target="_blank"
+              >
+                Ver proyecto
+              </a>
+              <a
+                href="https://github.com/frankcarmona14/hotelGrecia"
+                class="section__about-btnbordered"
+                target="_blank"
+                >Ver repositorio<ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <h2>OutCinema</h2>
+              <a
+                href="https://frankcarmona.000webhostapp.com/app/outCinema/index.php"
+                class="section__about-btn"
+                target="_blank"
+              >
+                Ver proyecto
+              </a>
+              <a
+                href="https://github.com/frankcarmona14/outCinema"
+                class="section__about-btnbordered"
+                target="_blank"
+                >Ver repositorio<ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <h2>Capacidad de Ahorro</h2>
+              <a
+                href="https://frankcarmona14.github.io/curso-practico-js/capacidadAhorro.html"
+                class="section__about-btn"
+                target="_blank"
+              >
+                Ver proyecto
+              </a>
+              <a
+                href="https://github.com/frankcarmona14/curso-practico-js"
+                class="section__about-btnbordered"
+                target="_blank"
+                >Ver repositorio<ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__content">
+              <h2>Portafolio</h2>
+              <a
+                href="#"
+                class="section__about-btn"
+                target="_blank"
+              >
+                Ver proyecto
+              </a>
+              <a
+                href="https://github.com/frankcarmona14/hotelGrecia"
+                class="section__about-btnbordered"
+                target="_blank"
+                >Ver repositorio<ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
+      <div class="section__contact">
+        <h2 class="section__about-title">¿Quieres contactarme?</h2>
+        <p class="section__about-paragraph">
+          Gracias por llegar hasta aquí. Espero que este portafolio haya sido de
+          tu agrado. Contacta conmigo a través de mis redes sociales. Hasta
+          pronto!
+        </p>
+        <div class="section__autor-social">
+          <a href="https://www.linkedin.com/in/frank-carmona14" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/frankcarmona14" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a href="https://wa.me/34678804203" target="_blank">
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </a>
+          <a href="https://twitter.com/Frank142512" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </div>
+      </div>
       <div class="footer__info">
-        <p>Hecho con 🤍. Frank Carmona &#169;2023 </p>
+        <p>Hecho con 🤍. Frank Carmona &#169;2023</p>
       </div>
     </footer>
     <script
