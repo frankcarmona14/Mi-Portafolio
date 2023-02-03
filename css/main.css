@@ -29,6 +29,28 @@
   --p-font: 1rem;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #8f54a0 transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 11px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #9147ff;
+  border-radius: 10px;
+  border: 3px solid #9147ff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -167,7 +189,7 @@ body {
 
 .section__about {
   margin: 0 10%;
-  padding-top: 200px;
+  padding: 100px 0;
   line-height: 2rem;
   font-weight: 300;
   display: grid;
@@ -233,12 +255,12 @@ body {
 
 .section__portfolio {
   margin: 0 10%;
-  padding-top: 200px;
+  padding: 100px 0;
   text-align: center;
 }
 
 .section__portfolio-cards {
-  padding: 60px 0 80px;
+  padding: 30px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
@@ -282,7 +304,7 @@ body {
 }
 
 .section__contact {
-  padding: 60px 0;
+  padding: 100px 0;
   margin: 0 10%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -321,7 +343,7 @@ body {
     font-size: var(--h2-font-md);
   }
 
-  .section__autor{
+  .section__autor {
     padding: 28px 5%;
   }
 
@@ -348,6 +370,7 @@ body {
 
   .section__contact .section__about-title {
     grid-column: 1 / 2;
+    text-align: center;
   }
 }
 
@@ -382,7 +405,8 @@ body {
   .navbar__list.open {
     opacity: 1;
     visibility: visible;
-    display: block;
+    display: grid;
+    place-content: center;
     height: calc(100vh - 60px);
     background-color: #9147ff;
     width: 100%;
@@ -390,7 +414,6 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     top: 70px;
     left: 0;
-    align-items: flex-start;
   }
 
   .navbar__list.open ul {
@@ -401,6 +424,12 @@ body {
 
   .navbar__list .navbar__list-item a {
     font-size: 1.25rem;
+  }
+
+  .section__about,
+  .section__portfolio,
+  .section__contact {
+    padding: 60px 0;
   }
 
   .section__about {
@@ -434,6 +463,11 @@ body {
     font-size: calc(var(--h2-font-md) - 1rem);
   }
 
+  .section__about-paragraph {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .section__portfolio-cards {
     grid-template-columns: 1fr;
   }
@@ -465,6 +499,10 @@ body {
     grid-template-columns: 1fr;
     padding-top: 100px;
     margin: 0 5%;
+  }
+
+  .section__about-title {
+    text-align: center;
   }
 
   .section__about-btn {
