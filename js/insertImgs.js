@@ -17,6 +17,7 @@ images.forEach((img) => {
   let image = document.createElement("img");
   image.src = `${route}${img}.svg`;
   sectionSkills.appendChild(image);
+  image.setAttribute("alt", img)
 });
 
 let cards = document.querySelectorAll(".card");
@@ -25,5 +26,4 @@ let projects = ["hotel", "cinema", "ahorro", "portafolio"];
 
   cards.forEach((card,i) => {
     card.style.backgroundImage = `url(${route}${projects[i]}.png)`;
-
   });
