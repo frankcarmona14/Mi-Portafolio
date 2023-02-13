@@ -22,7 +22,7 @@ images.forEach((img) => {
 
 let cards = document.querySelectorAll(".card");
 route = "assets/img/projects/";
-let projects = ["hotel", "cinema", "ahorro", "portafolio"];
+let projects = ["hotel", "cinema", "marvel", "portafolio", "ahorro"];
 
   cards.forEach((card,i) => {
     card.style.backgroundImage = `url(${route}${projects[i]}.png)`;
